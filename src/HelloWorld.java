@@ -1,5 +1,7 @@
 public class HelloWorld {
 
+public int x;
+
     public static void main(String[] args) {
         System.out.println("Testing 123..456...");
 
@@ -8,6 +10,9 @@ public class HelloWorld {
 
         String myString = "You gotta be odd to be number one";
         System.out.println("Here is my string: " + myString);
+
+        myString = "yeah yeah yeah";
+        System.out.println("new string: " + myString);
 
         char oneLetter = 'y';
         System.out.println("This is one letter: " + oneLetter);
@@ -18,11 +23,11 @@ public class HelloWorld {
         float myNumber = 123;
         System.out.println("Here is the second number:" + myNumber);
 
-//        int x = 5;
-//        System.out.println(x++);
-//        System.out.println(x);
-
         int x = 5;
+        System.out.println(x++);
+        System.out.println(x);
+
+         x = 6;
         System.out.println(++x);
         System.out.println(x);
 
