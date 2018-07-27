@@ -9,9 +9,12 @@ public class MethodsExercise {
         System.out.println("The product for those numbers are: "+ multi(4, 2));
         System.out.println("When you divide those numbers you get: "+ divide(4, 2));
         int userInput = getInterger(1,10);
-        System.out.println("You entered in " + userInput);
-    }
+        System.out.println("Thanks! You entered " + userInput);
 
+        int checker = factorial(1);
+        System.out.println("Thanks for playing~");
+    }
+//-------------------------------------------------------
 public static int isAdd(int num1, int num2) {
         int sum = num1 + num2;
         return sum;
@@ -37,22 +40,46 @@ public static int divide(int num1, int num2){
 }
 
 
-//-----------------------------------------
+//----------------------------------------- validates input between certain range
 
     public static int getInterger(int min, int max){    //initialize method with params
     Scanner sc = new Scanner(System.in);                //declare scanner for response
-        String getNumberMessage = "Enter a number between 1 and 10: "; //variable holding Q
+        String getNumberMessage = "Enter a number between 1 and 15: "; //variable holding Q
         System.out.println(getNumberMessage); //prompting user for information
         String response = sc.nextLine();        //variable to hold response
         int convertResp = Integer.parseInt(response); //converting response from Str to int
 
 
-        if(convertResp > min && convertResp < max){     //compare response to params
-            System.out.println("Thanks! This was your number: "+ convertResp);
+        if(convertResp >= min && convertResp <= max){     //compare response to params
+            return convertResp;
         }else{
             System.out.println("That's not right. Try again");
-        }
             return getInterger(min,max) ;
+        }
     }
+//---------------------------------------- factorial
+    public static int factorial(int n){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("New game! Give me a number between 1 and 10: ");
+        String input = sc.nextLine();
+        int convertInput = Integer.parseInt(input);
+        if(convertInput > 1 && convertInput < 10){
+            //put for loop here
+            System.out.println("Thankssss");
+
+            return getInterger(1, 10) ;
+
+
+//            return (convertInput = convertInput* (convertInput-1));
+        }else{
+            System.out.println("Nooo. Try again");
+        } return factorial(1);
+    }
+
+
+
+
+
+
 
 }
