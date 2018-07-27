@@ -1,28 +1,44 @@
 import java.util.Scanner;
 
 public class sandbox {
+    static Scanner sc;
 
     public static void main(String[] args){
-testRun("");
+
+landing("");
 
     }
-    public static String testRun(String response) {         //declare and initialize method
 
-        Scanner sc = new Scanner(System.in);            //set scanner
 
-        System.out.println("Welcome");   //print question
-        System.out.println("Would you like to give me some of your time? [y/n]");
-        String input = sc.nextLine().trim().toLowerCase();         //declare variable to hold the input
-        if (input.endsWith("y")) {            // if input ends with ?
-            System.out.println("So gracious. Let's begin...");       //then do this
-        } else if (input.endsWith("n") ) { //ends with ! or upper case and is empty..
-            System.out.println("Pitty..");
-        } else if (input.isEmpty()) {      //is the input is empty
-            System.out.println("Fine. Be that way!");
+
+    public static String landing(String response) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Welcome\nBegin a game? [y/n]");
+        String input = sc.nextLine().trim().toLowerCase();
+        if (input.endsWith("y")) {
+            return start("");
+        } else if (input.endsWith("n") || input.isEmpty()) { //ends with ! or upper case and is empty..
+            System.out.println("Oh..");
+            return noGood("Too bad");
 
         }
-        return testRun("");
+        return landing("");
     }
+    public static String noGood(String blank){
+        System.out.println("Pity");
+        return ("");
+    }
+
+    public static String start(String response){
+        System.out.println("Wonderfull.\nLet's see how far you can get.");
+
+        return noGood("");
+    }
+
 
 
 }
+
+    //have a statement to execute when a letter other than y or n is entered//
