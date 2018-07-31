@@ -36,7 +36,7 @@ String [] nouns = new String[10];
 
     int rndN = new Random().nextInt(nouns.length);
     int rndA = new Random().nextInt(adjectives.length);
-        System.out.println(adjectives[rndA]+" "+nouns[rndN]);
+        System.out.println("Here is your server name:\n"+ adjectives[rndA]+"-"+nouns[rndN]);
 
 
 
