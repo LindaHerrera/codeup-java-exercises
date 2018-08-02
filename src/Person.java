@@ -1,4 +1,5 @@
 public class Person {
+
         private String name; //==> class variable
 
        public String getName(){ //==> getter. get+name of property in camel case

@@ -16,11 +16,6 @@ public class ServerNameGenerator {
     adjectives[8] = "crumpled";
     adjectives[9] = "shaggy";
 
-
-
-//    String [] adjectives = {"bitter", "sharp", "yellow", "sweet", "rusted", "hunched", "bleached", "drained", "crumpled","starved"};
-
-
 String [] nouns = new String[10];
     nouns[0] = "notebook";
     nouns[1] = "left shoe";
