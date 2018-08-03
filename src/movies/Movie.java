@@ -2,7 +2,7 @@ package movies;
 
 public class Movie {  //==> class that holds all code
 
-    private String name;    //==>private property fields/instances
+    private String name;    //==>private property fields/instances/properties
     private String category;
 
     public Movie(String name, String category) {  //==> constructor with two params
