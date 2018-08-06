@@ -30,7 +30,5 @@ public class GradesApplication {
 
     }
 
-    public static void initApp(){
 
-    }
 }
